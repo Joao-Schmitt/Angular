@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { GearTextboxComponent } from '../shared/gear-textbox/gear-textbox.component';
 import { GearButtonComponent } from '../shared/gear-button/gear-button.component';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -11,14 +12,18 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   private route: Router;
-  show: boolean = false;
+  emailIsValid: boolean = false;
+  passwordIsValid: boolean = false;
+
+  email!: string;
+  password!: string;
   
   constructor(route: Router){
     this.route = route;
   }
 
-  login() : void {
-      this.show = true;
+  onLogin() {
+    
   }
 
   toCreateAccount(){

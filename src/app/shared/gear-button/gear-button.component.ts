@@ -10,7 +10,8 @@ import { NgStyle } from '@angular/common';
 })
 export class GearButtonComponent {
   @Input() caption = "Button"
-  @Input() type = "primary"
+  @Input() status = "primary"
+  @Input() type = "button"
   @Input() rounded = "10px";
   @Output() clickEvent = new EventEmitter();
   @Input() image: string = "";
@@ -19,7 +20,7 @@ export class GearButtonComponent {
   backgorund: string = "background-color";
 
   ngOnInit() : void{
-      switch(this.type){
+      switch(this.status){
         case "primary":
           this.color = "rgb(30, 25, 44)";
           this.backgorund = "background-color";

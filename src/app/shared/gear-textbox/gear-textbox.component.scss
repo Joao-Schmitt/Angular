@@ -8,6 +8,14 @@ input{
     margin-bottom: 15px;
 }
 
+.validator{
+    color: red;
+    text-align: left;
+    position: relative;
+    font-size: 14px;
+    top: 5px;
+}
+
 
 input[type=text]{
     height: 50px;

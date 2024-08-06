@@ -1,4 +1,7 @@
 <div class="container">
     <p>{{caption}}</p>
-    <input type="{{type}}" value="{{valor}}" placeholder="{{placeholder}}"> 
+    <input type="{{type}}" placeholder="{{placeholder}}" (blur)="onChange()" [(ngModel)]="value"> 
+    @if(!isValid){
+        <p class="validator">{{validateMessage}}</p>
+    }
 </div>

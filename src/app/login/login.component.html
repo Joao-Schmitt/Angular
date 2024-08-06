@@ -1,17 +1,13 @@
-<form>
+<form >
     <div class="login">
         <h1>Entrar</h1>
-        <gear-text-box caption="E-mail" placeholder="Informe um e-mail"></gear-text-box>
-        @if(show){
-            <p class="validator">Email inválido!</p>
-        }
-        <gear-text-box caption="Senha" placeholder="Informe sua senha" type="password"></gear-text-box>
-        @if(show){
-            <p class="validator">Senha inválida!</p>
-        }
+
+        <gear-text-box caption="E-mail" placeholder="Informe um e-mail" [(value)]="email"  [validate]="true" validateMessage="E-mail inválido"></gear-text-box>
+        <gear-text-box caption="Senha" placeholder="Informe sua senha" type="password" [(value)]="password"  [validate]="true" validateMessage="Senha inválida!"></gear-text-box>
+
         <a href="">Esqueci minha senha</a>
         <br/><br/>
-        <gear-button caption="Entrar" type="image" image="../../assets/background.png" (clickEvent)="login()"></gear-button>
-        <gear-button caption="Criar Conta" type="primary" (clickEvent)="toCreateAccount()"></gear-button>
+        <gear-button caption="Entrar" type="button" status="image" image="../../assets/background.png" (clickEvent)="onLogin()"></gear-button>
+        <gear-button caption="Criar Conta" type="button" status="primary" (clickEvent)="toCreateAccount()"></gear-button>
     </div>
 </form>
