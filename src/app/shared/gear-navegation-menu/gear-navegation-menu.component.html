@@ -1,0 +1,14 @@
+<div class="container-left" [ngStyle]="{'left': menuPos}">
+    <img src="assets/icons/menu.png" class="icon" (click)="menuClick()" >
+    <h2>♦  Gear School</h2>
+    <div class="line"></div>
+
+    <br> <br>
+    <gear-menu-button caption="Início" urlIcon="assets/icons/home.png"></gear-menu-button>
+    <gear-menu-button caption="Aulas" urlIcon="assets/icons/aulas.png"></gear-menu-button>
+    <gear-menu-button caption="Materiais" urlIcon="assets/icons/caderno.png"></gear-menu-button>
+    <gear-menu-button caption="Atividades" urlIcon="assets/icons/lista.png"></gear-menu-button>
+    <gear-menu-button caption="Mural" urlIcon="assets/icons/notificacao.png"></gear-menu-button>
+
+    <gear-menu-button caption="Sair" urlIcon="assets/icons/sair.png" class="btn-sair"></gear-menu-button>
+</div>

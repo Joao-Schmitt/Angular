@@ -1,0 +1,54 @@
+button{
+    height: 45px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    transition: 1s; 
+    opacity: 90%;
+    width: 100%;
+    //background-image: url('../../../../assets/background.png');
+    //background-color: gray;
+    transition: 1s;
+    background-color: white;
+}
+
+button:hover{
+   opacity: 100%;
+}
+
+.container{
+    margin-bottom: 5px;
+}
+
+button{
+   text-align: center;
+   cursor: pointer;
+}
+
+button:hover img{
+    width: 25px;
+}
+
+button:hover p{
+    color: #7F00F4;
+}   
+
+p{
+    font-size: 13px;
+    transition: 1s;
+    position: relative;
+    left: -15px;
+    top: 5px;
+}
+
+img{
+     float: left;
+     position: relative;
+     left: 30px;
+     width: 23px;
+     transition: 0.5s;
+}
+
+
+
+//#7F00F4

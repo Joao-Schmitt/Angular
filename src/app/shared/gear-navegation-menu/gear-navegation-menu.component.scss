@@ -1,0 +1,66 @@
+.menu{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.icon{
+    width: 20px;
+    margin-top: 10px;
+    position: relative;
+    left: 40px;
+    opacity: 50%;
+    transition: 0.5s;
+    float: right;
+}
+
+.icon:hover{
+    opacity: 100%;
+}
+
+.icon:active{
+    opacity: 60%;
+}
+
+.logo{
+    width: 100px;
+    margin: 20px
+}
+
+.container-left{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    //background-image: url('../../../assets/background.png');
+    background-color: white;
+    height: 100vh;
+    cursor: pointer;
+    transition: 1s;
+    text-align: center;
+}
+
+.btn-sair{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.line{
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    background-color: rgb(209, 209, 209);
+    opacity: 50%;
+    width: 95%;
+    height: 1px;
+ }
+
+ h2{
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    color: #7F00F4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

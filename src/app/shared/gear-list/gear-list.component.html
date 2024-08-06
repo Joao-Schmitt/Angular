@@ -1,0 +1,8 @@
+<div class="container"> 
+    @for (item of dataSouce; track item) {
+        <div class="item" *ngFor="let dt of dataSouce">
+            <h3>{{dt.name}}</h3>
+            <p>{{dt.description}}</p>
+        </div>
+     }
+</div>

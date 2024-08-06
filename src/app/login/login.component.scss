@@ -1,0 +1,40 @@
+form{
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 20vh;
+    background-color: rgb(222, 218, 233);
+}
+
+form .login{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    float: right;
+}
+
+.validator{
+    color: red;
+    text-align: left;
+    position: relative;
+    top: -10px;
+}
+
+gear-text-box {
+    width: 100%;
+}
+
+gear-button{
+    float: right;
+    width: 100%;
+}
+
+a{
+    float: right;
+}
+
+h1{
+    text-align: center;
+}
