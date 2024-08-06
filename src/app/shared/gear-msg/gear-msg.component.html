@@ -1,0 +1,29 @@
+@if(show){ 
+   @if(typeMsg == "sucess"){
+    <div class="box-sucess" >
+        <img src="assets/msg/alerta.png">
+        <p>{{message}}</p>
+    </div>
+   }
+
+   @if(typeMsg == "alert"){
+    <div class="box-alert">
+        <img src="assets/msg/alerta.png">
+        <p>{{message}}</p>
+    </div>
+   }
+
+   @if(typeMsg == "danger"){
+    <div class="box-danger">
+        <img src="assets/msg/alerta.png">
+        <p>{{message}}</p>
+    </div>
+   }
+
+   @if(typeMsg == "info"){
+    <div class="box-info">
+        <img src="assets/msg/alerta.png">
+        <p>{{message}}</p>
+    </div>
+   }
+}

@@ -10,4 +10,6 @@
         <gear-button caption="Entrar" type="button" status="image" image="../../assets/background.png" (clickEvent)="onLogin()"></gear-button>
         <gear-button caption="Criar Conta" type="button" status="primary" (clickEvent)="toCreateAccount()"></gear-button>
     </div>
+
+    <gear-msg [show]="showMsg" typeMsg="{{typeMsg}}" message="{{textMsg}}" [timeout]="timeoutMsg"></gear-msg>
 </form>
