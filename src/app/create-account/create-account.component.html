@@ -4,8 +4,14 @@
     <gear-text-box caption="E-mail" placeholder="Informe um e-mail"></gear-text-box>
     <gear-text-box caption="Senha" placeholder="Informe sua senha" type="password"></gear-text-box>
     <gear-text-box caption="Confirme sua senha" placeholder="Informe sua senha novamente" type="password"></gear-text-box>
-    <gear-text-box caption="Código de ativação" placeholder="Informe seu código de ativação"></gear-text-box>
-    <br/>
-    <gear-button caption="Continuar" status="sucess" ></gear-button>
-    <gear-button caption="Entrar em uma conta existente" status="primary" (clickEvent)="toLogin()"></gear-button>
+    <div class="container-code">
+        <gear-text-box caption="Código de ativação" placeholder="Informe o código de ativação"></gear-text-box>
+    </div>
+    <gear-button class="btn-code" caption="{{captionCode}}" status="primary" (clickEvent)="sendCode()"></gear-button>
+    <div class="container-actions">
+        <gear-button caption="Continuar" status="sucess" ></gear-button>
+        <gear-button caption="Entrar em uma conta existente" status="primary" (clickEvent)="toLogin()"></gear-button>
+    </div>
 </form>
+
+<gear-msg></gear-msg>

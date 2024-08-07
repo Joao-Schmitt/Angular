@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { GearTextboxComponent } from '../shared/gear-textbox/gear-textbox.component';
 import { GearButtonComponent } from '../shared/gear-button/gear-button.component';
 import { Router } from '@angular/router';
@@ -22,15 +22,9 @@ export class LoginComponent {
   email!: string;
   password!: string;
 
-  //Msg
-  showMsg: boolean = false;
-  typeMsg: string = "alert";
-  textMsg: string = "";
-  timeoutMsg: number = 5000;
-
+  @ViewChild(GearMsgComponent) gearMsgComponent!: GearMsgComponent;
   
   constructor(route: Router, private service: AccountService){
-    //this.accountService = service;
     this.route = route;
   }
 
@@ -46,27 +40,16 @@ export class LoginComponent {
 
     this.service.Login(credentials).subscribe(
       response => {
-        this.showMessage("Login realizado com sucesso!", "sucess");
+        this.gearMsgComponent.ShowMessage("Login realizado com sucesso!", "sucess");
+        this.route.navigateByUrl('student-home');
       },
       error => {
-        this.showMessage("Usuário ou Senha inválidos!", "danger");
+        this.gearMsgComponent.ShowMessage("Usuário ou Senha inválidos!", "alert");
       }
     );
   }
 
   toCreateAccount(){
     this.route.navigateByUrl('create-account');
-  }
-
-  showMessage(msg: string, type: string) : void{
-      this.showMsg = true;
-      this.textMsg = msg;
-      this.typeMsg = type;
-
-      setTimeout(() => {
-        this.textMsg = "";
-        this.showMsg = false;
-
-      }, this.timeoutMsg);
   }
 }

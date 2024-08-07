@@ -1,6 +1,6 @@
 form{
     width: 500px;
-    height: 720px;
+    height: 690px;
     margin: 0 auto;
     position: relative;
     top: 10vh;
@@ -23,4 +23,20 @@ a{
 
 h1{
     text-align: center;
+}
+
+.container-code{
+    width: 255px;
+}
+
+.btn-code{
+    width: 200px;
+    float: right;
+    position: relative;
+    top: -63px;
+}
+
+.container-actions{
+    position: relative;
+    top: -40px;
 }

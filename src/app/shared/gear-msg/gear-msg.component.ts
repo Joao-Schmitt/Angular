@@ -8,14 +8,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './gear-msg.component.scss'
 })
 export class GearMsgComponent {
-  @Input() show: boolean = true;
-  @Input() typeMsg: string = "alert";
-  @Input() message: string = "";
-  @Input() timeout: number = 5000;
-
-  showMsg(msg: string, type: string){
+  show: boolean = false;
+  typeMsg: string = "alert";
+  message: string = "";
+  timeout: number = 5000;
+  
+  ShowMessage(msg: string, type: string){
       this.show = true;
       this.message = msg;
+      this.typeMsg = type;
 
       setTimeout(() => {
         this.message = "";
